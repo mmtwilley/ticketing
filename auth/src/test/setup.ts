@@ -11,7 +11,7 @@ declare global {
 let mongo: any; 
 
 beforeAll(async () => {
-    const mongo = await MongoMemoryServer.create();
+    mongo = await MongoMemoryServer.create();
     const mongoUri = mongo.getUri();
 
     await mongoose.connect(mongoUri, {});
