@@ -3,7 +3,7 @@ import request from 'supertest';
 import { OrderStatus } from '@mttickets2023/common'; 
 import { app } from '../../app';
 import { Order } from '../../models/order';
-import { stripe } from '../../__mocks__/stripe.ts.old';
+import { stripe } from '../../stripe';
 import { Payment } from '../../models/payment';
 
 
