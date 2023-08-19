@@ -16,7 +16,7 @@ jobs:
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      - run: cd auth && docker build -t rallycoding/auth .
+      - run: cd auth && docker build -t mtwilley/auth .
       - run: docker push rallycoding/auth
       - uses: digitalocean/action-doctl@v2
         with:
